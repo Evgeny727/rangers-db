@@ -1049,7 +1049,7 @@ const CONNECTIONS: ConnectionType[] = [
   },
   {
     locA: 'crystal_basin',
-    locB: 'atrox_mountains',
+    locB: 'atrox_mountain',
     path: Path.RAVINE,
     expansionConditions: [
       {
@@ -1060,7 +1060,7 @@ const CONNECTIONS: ConnectionType[] = [
   },
   {
     locA: 'crystal_basin',
-    locB: 'sentinal_peak',
+    locB: 'sentinel_peak',
     path: Path.MOUNTAIN_PASS,
     expansionConditions: [
       {
@@ -1070,8 +1070,19 @@ const CONNECTIONS: ConnectionType[] = [
     ]
   },
   {
+    locA: 'crystal_basin',
+    locB: 'terra_lodge',
+    path: Path.LAKESHORE,
+    expansionConditions: [
+      {
+        expansion: 'sos',
+        action: 'add',
+      }
+    ]
+  },
+  {
     locA: 'terra_lodge',
-    locB: 'sentinal_peak',
+    locB: 'sentinel_peak',
     path: Path.MOUNTAIN_PASS,
     expansionConditions: [
       {
