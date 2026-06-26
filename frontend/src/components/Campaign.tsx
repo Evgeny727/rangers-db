@@ -57,6 +57,13 @@ import { useCycleCampaigns } from '../pages/campaigns';
 import { getMissionsByCycle, getMissionName } from '../lib/missions';
 import { PATH_CARDS, PathCardDefinition, getPathCardName, canShowPathCard } from '../lib/pathCards';
 
+interface PathCardOption extends OptionBase {
+  value: string;
+  card: PathCardDefinition;
+  searchString: string;
+  label: React.ReactNode;
+}
+
 const STARTING_LOCATIONS: { [campaign: string]: string } = {
   demo: 'lone_tree_station',
   core: 'lone_tree_station',
@@ -765,9 +772,9 @@ function useAddMissionModal(campaign: ParsedCampaign): [() => void, React.ReactN
                 if (input.length < 2) return false;
                 return option.label.toLowerCase().includes(input.toLowerCase());
               }}
-              noOptionsMessage={() => 
-                inputValue.length < 2 
-                  ? t`Type at least 2 characters...` 
+              noOptionsMessage={() =>
+                inputValue.length < 2
+                  ? t`Type at least 2 characters...`
                   : t`No missions found`
               }
             />
@@ -823,7 +830,7 @@ function useEditMissionModal(campaign: ParsedCampaign): [(mission: MissionEntry,
     setCurrent({ mission, index });
     setCustomName(mission.name);
     setDay(`${mission.day}`);
-    
+
     // Cerca se la missione corrisponde a una delle opzioni del dropdown
     const matchingOption = missionOptions.find(opt => opt.label === mission.name);
     if (matchingOption) {
@@ -831,7 +838,7 @@ function useEditMissionModal(campaign: ParsedCampaign): [(mission: MissionEntry,
     } else {
       setSelectedMission(null);
     }
-    
+
     if (mission.checks) {
       setProgress(mission.checks);
     } else {
@@ -944,9 +951,9 @@ function useEditMissionModal(campaign: ParsedCampaign): [(mission: MissionEntry,
                   if (input.length < 2) return false;
                   return option.label.toLowerCase().includes(input.toLowerCase());
                 }}
-                noOptionsMessage={() => 
-                  inputValue.length < 2 
-                    ? t`Type at least 2 characters...` 
+                noOptionsMessage={() =>
+                  inputValue.length < 2
+                    ? t`Type at least 2 characters...`
                     : t`No missions found`
                 }
               />
@@ -1150,22 +1157,22 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
   const { locale } = useLocale();
   const { generalSets, paths } = useLocale();
   const { locations } = useContext(CampaignContext);
-  
+
   const [submitEntry] = useAddCampaignRemovedMutation();
   const [updateRemoved] = useUpdateCampaignRemovedMutation();
-  
+
   const [selectedCard, setSelectedCard] = useState<PathCardDefinition | undefined>();
   const [inputValue, setInputValue] = useState('');
-  
+
   // Per inserimento manuale
   const [customName, setCustomName] = useState('');
   const [cardSet, setCardSet] = useState<string | undefined>();
-  
+
   // Crea le opzioni per il dropdown con icone dei set
   const pathCardOptions: PathCardOption[] = useMemo(() => {
     return PATH_CARDS.map(card => {
       const cardName = getPathCardName(card.code, locale);
-      
+
       // Determina quale icona usare in base al set_type
       let icon: React.ReactNode = null;
       if (card.set_type === 'path') {
@@ -1179,12 +1186,12 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
           icon = <LocationIcon location={location} size={48} />;
         }
       }
-      
+
       // Trova il nome della destinazione (se presente)
-      const destinationName = card.destination 
+      const destinationName = card.destination
         ? (locations[card.destination]?.name || generalSets[card.destination]?.name || card.destination)
         : undefined;
-      
+
       return {
         value: card.code,
         card: card,
@@ -1204,7 +1211,7 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
       };
     });
   }, [locale, locations, generalSets, paths]);
-  
+
   // Estrai i nomi delle carte già aggiunte per verificare i prerequisiti
   const addedCardNames = useMemo(() => {
     return campaign.removed.map(r => r.name);
@@ -1223,26 +1230,26 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
       return [];
     }
     const searchLower = inputValue.toLowerCase();
-    return pathCardOptions.filter(opt => 
-      opt.searchString.includes(searchLower) && 
+    return pathCardOptions.filter(opt =>
+      opt.searchString.includes(searchLower) &&
       canShowPathCard(opt.card, addedCardCodes)
     );
   }, [pathCardOptions, inputValue, addedCardCodes]);
-  
+
   const onSubmitEntry = useCallback(async() => {
     // Dropdown ha priorità
     const name = selectedCard ? getPathCardName(selectedCard.code, locale) : customName;
     const setId = selectedCard?.set_id || cardSet;
-    
+
     if (!name || !setId) {
       return;
     }
-    
+
     const entry: RemovedEntry = {
       set_id: setId,
       name,
     };
-    
+
     const r = await submitEntry({
       variables: {
         campaignId: campaign.id,
@@ -1258,7 +1265,7 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
     setCardSet(undefined);
     return undefined;
   }, [selectedCard, locale, customName, cardSet, submitEntry, campaign.id]);
-  
+
   const onRemove = useCallback(async(index: number) => {
     const r = await updateRemoved({
       variables: {
@@ -1271,7 +1278,7 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
     }
     return undefined;
   }, [campaign.removed, campaign.id, updateRemoved]);
-  
+
   const handleSelectChange = useCallback((option: PathCardOption | null) => {
     if (option) {
       setSelectedCard(option.card);
@@ -1282,11 +1289,11 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
       setSelectedCard(undefined);
     }
   }, []);
-  
+
   const handleInputChange = useCallback((newValue: string) => {
     setInputValue(newValue);
   }, []);
-  
+
   // Valore selezionato per il Select
   const selectedValue = useMemo(() => {
     if (!selectedCard) return null;
@@ -1299,7 +1306,7 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
   // - Se customName && !cardSet → NON ok (deve selezionare il set)
   const hasValidEntry = !!(selectedCard || (trim(customName) && cardSet));
   const hasCustomNameWithoutSet = !!(trim(customName) && !cardSet && !selectedCard);
-  
+
   return (
     <>
       <Text marginBottom={2}>
@@ -1315,8 +1322,8 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
             inputValue={inputValue}
             options={filteredOptions}
             placeholder={t`Type at least 2 characters to search...`}
-            noOptionsMessage={() => 
-              inputValue.length < 2 
+            noOptionsMessage={() =>
+              inputValue.length < 2
                 ? t`Type at least 2 characters to search...`
                 : t`No cards found`
             }
@@ -1334,7 +1341,7 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
             }}
           />
         </FormControl>
-        
+
         {/* Campi per inserimento manuale */}
         <FormControl marginTop={4}>
           <FormLabel>{t`Or enter manually`}</FormLabel>
@@ -1355,12 +1362,12 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
               </Text>
             )}
           </FormLabel>
-          <CardSetSelect 
-            value={selectedCard?.set_id || cardSet} 
+          <CardSetSelect
+            value={selectedCard?.set_id || cardSet}
             setValue={setCardSet}
           />
         </FormControl>
-        
+
         {(selectedCard || hasValidEntry) && (
           <ButtonGroup marginTop={2}>
             <SubmitButton color="blue" disabled={!hasValidEntry} onSubmit={onSubmitEntry}>
@@ -1375,7 +1382,7 @@ function RemovedTab({ campaign }: { campaign: ParsedCampaign }) {
           </ButtonGroup>
         )}
       </Box>
-      
+
       <TableContainer marginBottom={2}>
         <Table variant="simple">
           <Thead>
