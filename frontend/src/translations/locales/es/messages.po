@@ -25,6 +25,9 @@ msgstr "- Puedes utilizar los siguientes iconos específicos del juego encerrán
 msgid "(edited)"
 msgstr "(editado)"
 
+msgid "(required for manual entry)"
+msgstr ""
+
 msgid "{0, plural, one {({1} Malady)} other {({2} Maladies)}}"
 msgstr "{0, plural, one {({1} Malady)} other {({2} Maladies)}}"
 
@@ -70,6 +73,12 @@ msgstr "Añadir"
 msgid "Add additional deck"
 msgstr "Añadir mazo adicional"
 
+msgid "Add as Moved"
+msgstr ""
+
+msgid "Add as Removed"
+msgstr ""
+
 msgid "Add mission"
 msgstr "Añadir misión"
 
@@ -110,6 +119,9 @@ msgid "An error occurred during login."
 msgstr ""
 
 msgid "An error occurred during registration."
+msgstr ""
+
+msgid "An error occurred while loading the campaign."
 msgstr ""
 
 msgid "Ancestor's Grove"
@@ -163,6 +175,9 @@ msgstr "Montaña Atrox"
 msgid "Available"
 msgstr "Disponible"
 
+msgid "Available Rewards"
+msgstr ""
+
 msgid "Average"
 msgstr "Promedio"
 
@@ -194,6 +209,9 @@ msgid "Branching Artery"
 msgstr "Arteria de bifurcación"
 
 msgid "Brookside"
+msgstr ""
+
+msgid "Browse missions"
 msgstr ""
 
 msgid "Camp"
@@ -231,6 +249,9 @@ msgstr "Cartas"
 
 msgid "Cards that are removed from your deck will be stored here. They can be swapped back into your deck when you camp."
 msgstr "Las cartas que retires de tu mazo se guardarán aquí. Puedes volver a colocarlas en tu mazo al acampar."
+
+msgid "Cards that have been permanently removed from the path deck."
+msgstr ""
 
 msgid "Cards with the Expert trait cannot be chosen as an outside interest and are hidden automatically."
 msgstr "Las cartas con el rasgo Experto no se pueden elegir como interés externo y se ocultan automáticamente."
@@ -412,6 +433,9 @@ msgstr "Duplica este mazo conservando el original."
 msgid "E-mail Address"
 msgstr "Dirección de email"
 
+msgid "e.g., Journey, Lure..."
+msgstr ""
+
 msgid "Edit"
 msgstr "Editar"
 
@@ -450,6 +474,9 @@ msgstr "Terminó el día a las {0}."
 
 msgid "English"
 msgstr "Inglés"
+
+msgid "Enter card name..."
+msgstr ""
 
 msgid "Enveloping Silence"
 msgstr "Silencio envolvente"
@@ -679,6 +706,9 @@ msgstr "Monte Nim"
 msgid "Mountain Pass"
 msgstr "Montaña"
 
+msgid "Moved"
+msgstr ""
+
 msgid "My Campaigns"
 msgstr "Mi campaña"
 
@@ -709,6 +739,9 @@ msgstr "Nuevo mazo"
 msgid "Next"
 msgstr "Siguiente"
 
+msgid "Next campaign"
+msgstr ""
+
 msgid "Next deck"
 msgstr "Siguiente mazo"
 
@@ -721,6 +754,12 @@ msgstr ""
 msgid "No account found with this email address."
 msgstr ""
 
+msgid "No cards found"
+msgstr ""
+
+msgid "No cards removed yet."
+msgstr ""
+
 msgid "No matching cards"
 msgstr "No hay cartas coincidentes"
 
@@ -730,11 +769,26 @@ msgstr "No se encontraron cartas coincidentes."
 msgid "No matching decks."
 msgstr "No se encontraron mazos coincidentes."
 
+msgid "No missions found"
+msgstr ""
+
+msgid "No missions recorded yet."
+msgstr ""
+
+msgid "No notable events recorded yet."
+msgstr ""
+
+msgid "No notes recorded yet."
+msgstr ""
+
 msgid "No published decks."
 msgstr "No hay mazos publicados"
 
 msgid "No results"
 msgstr "Sin resultados"
+
+msgid "No rewards unlocked yet."
+msgstr ""
 
 msgid "None"
 msgstr "Nada"
@@ -794,6 +848,9 @@ msgid "One of the chosen specialty cards is counting towards outside interest."
 msgstr "Una de las cartas especiales elegidas cuenta para los Otros Intereses."
 
 msgid "Only one aspect can be set to 3 or 4."
+msgstr ""
+
+msgid "Or enter manually"
 msgstr ""
 
 msgid "Orlin's Vault"
@@ -908,9 +965,6 @@ msgstr "Rechazar"
 msgid "Remove"
 msgstr "Eliminar"
 
-msgid "Remove card"
-msgstr "Eliminar Cartas"
-
 msgid "Remove deck"
 msgstr "Eliminar Mazo"
 
@@ -967,6 +1021,9 @@ msgstr "Guardar cambios"
 
 msgid "Scuttler Network"
 msgstr "Conjunto de pasadizos"
+
+msgid "Search and select a card"
+msgstr ""
 
 msgid "Search by name"
 msgstr "Buscar por Nombre"
@@ -1199,8 +1256,8 @@ msgstr "Hay demasiadas cartas de otros intereses en el mazo."
 msgid "This account has been disabled."
 msgstr ""
 
-msgid "This campaign is not accessible. Are you sure you are signed into the correct account?"
-msgstr "No se puede acceder a esta campaña. ¿Estás seguro de haber iniciado sesión con la cuenta correcta?"
+msgid "This campaign is not accessible or does not exist."
+msgstr ""
 
 msgid "This card's aspect requirement is not satisfied by your chosen aspects."
 msgstr "Tus aspectos escogidos no satisfacen el requisito de aspecto de esta carta."
@@ -1268,8 +1325,8 @@ msgstr "Demasiadas cartas de VIT."
 msgid "Total"
 msgstr "Total"
 
-msgid "Track cards that are removed permanently from the path deck here."
-msgstr "Realiza un seguimiento de las cartas que se eliminan permanentemente del mazo de caminos aquí."
+msgid "Track cards that are removed or moved permanently from the path deck here."
+msgstr ""
 
 msgid "Traits"
 msgstr "Rasgos"
@@ -1288,6 +1345,15 @@ msgstr "Viajar & Acampar"
 
 msgid "Traveled to {0}."
 msgstr "Viaje a {0}."
+
+msgid "Type at least 2 characters to search..."
+msgstr ""
+
+msgid "Type at least 2 characters..."
+msgstr ""
+
+msgid "Type to search..."
+msgstr ""
 
 msgid "Types"
 msgstr "Tipos"
@@ -1345,6 +1411,9 @@ msgstr "Bosque"
 
 msgid "You"
 msgstr "Tú"
+
+msgid "You are viewing this campaign in read-only mode."
+msgstr ""
 
 msgid "You can add this deck to a campaign to track rewards you have unlocked as a group."
 msgstr "Puedes agregar este mazo a una campaña para realizar un seguimiento de las recompensas que has desbloqueado como grupo."

@@ -25,6 +25,9 @@ msgstr ""
 msgid "(edited)"
 msgstr ""
 
+msgid "(required for manual entry)"
+msgstr ""
+
 msgid "{0, plural, one {({1} Malady)} other {({2} Maladies)}}"
 msgstr ""
 
@@ -70,6 +73,12 @@ msgstr ""
 msgid "Add additional deck"
 msgstr ""
 
+msgid "Add as Moved"
+msgstr ""
+
+msgid "Add as Removed"
+msgstr ""
+
 msgid "Add mission"
 msgstr ""
 
@@ -110,6 +119,9 @@ msgid "An error occurred during login."
 msgstr ""
 
 msgid "An error occurred during registration."
+msgstr ""
+
+msgid "An error occurred while loading the campaign."
 msgstr ""
 
 msgid "Ancestor's Grove"
@@ -163,6 +175,9 @@ msgstr ""
 msgid "Available"
 msgstr ""
 
+msgid "Available Rewards"
+msgstr ""
+
 msgid "Average"
 msgstr ""
 
@@ -194,6 +209,9 @@ msgid "Branching Artery"
 msgstr ""
 
 msgid "Brookside"
+msgstr ""
+
+msgid "Browse missions"
 msgstr ""
 
 msgid "Camp"
@@ -230,6 +248,9 @@ msgid "Cards"
 msgstr ""
 
 msgid "Cards that are removed from your deck will be stored here. They can be swapped back into your deck when you camp."
+msgstr ""
+
+msgid "Cards that have been permanently removed from the path deck."
 msgstr ""
 
 msgid "Cards with the Expert trait cannot be chosen as an outside interest and are hidden automatically."
@@ -412,6 +433,9 @@ msgstr ""
 msgid "E-mail Address"
 msgstr ""
 
+msgid "e.g., Journey, Lure..."
+msgstr ""
+
 msgid "Edit"
 msgstr ""
 
@@ -449,6 +473,9 @@ msgid "Ended the day at {0}."
 msgstr ""
 
 msgid "English"
+msgstr ""
+
+msgid "Enter card name..."
 msgstr ""
 
 msgid "Enveloping Silence"
@@ -679,6 +706,9 @@ msgstr ""
 msgid "Mountain Pass"
 msgstr ""
 
+msgid "Moved"
+msgstr ""
+
 msgid "My Campaigns"
 msgstr ""
 
@@ -709,6 +739,9 @@ msgstr ""
 msgid "Next"
 msgstr ""
 
+msgid "Next campaign"
+msgstr ""
+
 msgid "Next deck"
 msgstr ""
 
@@ -721,6 +754,12 @@ msgstr ""
 msgid "No account found with this email address."
 msgstr ""
 
+msgid "No cards found"
+msgstr ""
+
+msgid "No cards removed yet."
+msgstr ""
+
 msgid "No matching cards"
 msgstr ""
 
@@ -730,10 +769,25 @@ msgstr ""
 msgid "No matching decks."
 msgstr ""
 
+msgid "No missions found"
+msgstr ""
+
+msgid "No missions recorded yet."
+msgstr ""
+
+msgid "No notable events recorded yet."
+msgstr ""
+
+msgid "No notes recorded yet."
+msgstr ""
+
 msgid "No published decks."
 msgstr ""
 
 msgid "No results"
+msgstr ""
+
+msgid "No rewards unlocked yet."
 msgstr ""
 
 msgid "None"
@@ -794,6 +848,9 @@ msgid "One of the chosen specialty cards is counting towards outside interest."
 msgstr ""
 
 msgid "Only one aspect can be set to 3 or 4."
+msgstr ""
+
+msgid "Or enter manually"
 msgstr ""
 
 msgid "Orlin's Vault"
@@ -908,9 +965,6 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-msgid "Remove card"
-msgstr ""
-
 msgid "Remove deck"
 msgstr ""
 
@@ -966,6 +1020,9 @@ msgid "Save changes"
 msgstr ""
 
 msgid "Scuttler Network"
+msgstr ""
+
+msgid "Search and select a card"
 msgstr ""
 
 msgid "Search by name"
@@ -1199,7 +1256,7 @@ msgstr ""
 msgid "This account has been disabled."
 msgstr ""
 
-msgid "This campaign is not accessible. Are you sure you are signed into the correct account?"
+msgid "This campaign is not accessible or does not exist."
 msgstr ""
 
 msgid "This card's aspect requirement is not satisfied by your chosen aspects."
@@ -1268,7 +1325,7 @@ msgstr ""
 msgid "Total"
 msgstr ""
 
-msgid "Track cards that are removed permanently from the path deck here."
+msgid "Track cards that are removed or moved permanently from the path deck here."
 msgstr ""
 
 msgid "Traits"
@@ -1287,6 +1344,15 @@ msgid "Travel & Camp"
 msgstr ""
 
 msgid "Traveled to {0}."
+msgstr ""
+
+msgid "Type at least 2 characters to search..."
+msgstr ""
+
+msgid "Type at least 2 characters..."
+msgstr ""
+
+msgid "Type to search..."
 msgstr ""
 
 msgid "Types"
@@ -1344,6 +1410,9 @@ msgid "Woods"
 msgstr ""
 
 msgid "You"
+msgstr ""
+
+msgid "You are viewing this campaign in read-only mode."
 msgstr ""
 
 msgid "You can add this deck to a campaign to track rewards you have unlocked as a group."

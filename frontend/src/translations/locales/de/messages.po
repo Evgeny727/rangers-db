@@ -25,6 +25,9 @@ msgstr "- Die folgenden Icons aus dem Spiel können mit eckigen Klammern verwend
 msgid "(edited)"
 msgstr "(bearbeitet)"
 
+msgid "(required for manual entry)"
+msgstr ""
+
 msgid "{0, plural, one {({1} Malady)} other {({2} Maladies)}}"
 msgstr "{0, plural, one {({1} Schwächung)} other {({2} Schwächungen)}}"
 
@@ -70,6 +73,12 @@ msgstr "Hinzufügen"
 msgid "Add additional deck"
 msgstr "Ein weiteres Deck hinzufügen"
 
+msgid "Add as Moved"
+msgstr ""
+
+msgid "Add as Removed"
+msgstr ""
+
 msgid "Add mission"
 msgstr "Mission hinzufügen"
 
@@ -111,6 +120,9 @@ msgstr "Bei der Anmeldung ist ein Fehler aufgetreten"
 
 msgid "An error occurred during registration."
 msgstr "Bei der Registrierung ist ein Fehler aufgetreten"
+
+msgid "An error occurred while loading the campaign."
+msgstr ""
 
 msgid "Ancestor's Grove"
 msgstr "Wurzeln der Ältesten"
@@ -163,6 +175,9 @@ msgstr "Atrox-Berg"
 msgid "Available"
 msgstr "Verfügbar"
 
+msgid "Available Rewards"
+msgstr ""
+
 msgid "Average"
 msgstr "Durchschnitt"
 
@@ -194,6 +209,9 @@ msgid "Branching Artery"
 msgstr "Arterien-Verzweigung"
 
 msgid "Brookside"
+msgstr ""
+
+msgid "Browse missions"
 msgstr ""
 
 msgid "Camp"
@@ -231,6 +249,9 @@ msgstr "Karten"
 
 msgid "Cards that are removed from your deck will be stored here. They can be swapped back into your deck when you camp."
 msgstr "Karten die aus deinem Deck entfernt wurden werden hier abgelegt. Sie können zurück in dein Deck genommen werden wenn du dein Nachtlager aufschlägst."
+
+msgid "Cards that have been permanently removed from the path deck."
+msgstr ""
 
 msgid "Cards with the Expert trait cannot be chosen as an outside interest and are hidden automatically."
 msgstr "Karten mit dem Merkmal \"Experte\" können nicht als Hobby gewählt werden und werden automatisch ausgeblendet."
@@ -412,6 +433,9 @@ msgstr "Klone dieses Deck, das Original bleibt erhalten."
 msgid "E-mail Address"
 msgstr "E-Mail-Adresse"
 
+msgid "e.g., Journey, Lure..."
+msgstr ""
+
 msgid "Edit"
 msgstr "Bearbeiten"
 
@@ -450,6 +474,9 @@ msgstr "Tag bei {0} beendet."
 
 msgid "English"
 msgstr "Englisch"
+
+msgid "Enter card name..."
+msgstr ""
 
 msgid "Enveloping Silence"
 msgstr "Schreiende Stille"
@@ -679,6 +706,9 @@ msgstr "Nim-Spitzen"
 msgid "Mountain Pass"
 msgstr "Bergpass"
 
+msgid "Moved"
+msgstr ""
+
 msgid "My Campaigns"
 msgstr "Meine Kampagnen"
 
@@ -709,6 +739,9 @@ msgstr "Neues Deck"
 msgid "Next"
 msgstr "Nächste Seite"
 
+msgid "Next campaign"
+msgstr ""
+
 msgid "Next deck"
 msgstr "Nächstes Deck"
 
@@ -721,6 +754,12 @@ msgstr ""
 msgid "No account found with this email address."
 msgstr "Keinen Account mit dieser E-Mail-Adresse gefunden."
 
+msgid "No cards found"
+msgstr ""
+
+msgid "No cards removed yet."
+msgstr ""
+
 msgid "No matching cards"
 msgstr "Keine passenden Karten"
 
@@ -730,11 +769,26 @@ msgstr "Keine passenden Karten gefunden."
 msgid "No matching decks."
 msgstr "Keine passenden Decks."
 
+msgid "No missions found"
+msgstr ""
+
+msgid "No missions recorded yet."
+msgstr ""
+
+msgid "No notable events recorded yet."
+msgstr ""
+
+msgid "No notes recorded yet."
+msgstr ""
+
 msgid "No published decks."
 msgstr "Keine veröffentlichten Decks."
 
 msgid "No results"
 msgstr "Kein Ergebnis"
+
+msgid "No rewards unlocked yet."
+msgstr ""
 
 msgid "None"
 msgstr "Keine"
@@ -795,6 +849,9 @@ msgstr "Eine der gewählten Expertise-Karten zählt als Hobby."
 
 msgid "Only one aspect can be set to 3 or 4."
 msgstr "Nur ein Aspekt kann auf 3 oder 4 gesetzt werden."
+
+msgid "Or enter manually"
+msgstr ""
 
 msgid "Orlin's Vault"
 msgstr "Orlins Gewölbe"
@@ -908,9 +965,6 @@ msgstr "Ablehnen"
 msgid "Remove"
 msgstr "Entfernen"
 
-msgid "Remove card"
-msgstr "Karte entfernen"
-
 msgid "Remove deck"
 msgstr "Deck entfernen"
 
@@ -967,6 +1021,9 @@ msgstr "Änderungen speichern"
 
 msgid "Scuttler Network"
 msgstr "Krabblertunnel-Netz"
+
+msgid "Search and select a card"
+msgstr ""
 
 msgid "Search by name"
 msgstr "Nach Name suchen"
@@ -1199,8 +1256,8 @@ msgstr "Es sind zu viele Hobby-Karten in deinem Deck."
 msgid "This account has been disabled."
 msgstr "Dieser Account wurde deaktiviert"
 
-msgid "This campaign is not accessible. Are you sure you are signed into the correct account?"
-msgstr "Keinen Zugriff auf diese Kampagne. Bist du sicher, dass du dich mit dem richtigen Account angemeldet hast?"
+msgid "This campaign is not accessible or does not exist."
+msgstr ""
 
 msgid "This card's aspect requirement is not satisfied by your chosen aspects."
 msgstr "Die Aspekt-Voraussetzung dieser Karte wird von deinen gewählten Aspekten nicht erfüllt."
@@ -1268,8 +1325,8 @@ msgstr "Zu viele SOV-Eigenarten-Karten."
 msgid "Total"
 msgstr "Gesamt"
 
-msgid "Track cards that are removed permanently from the path deck here."
-msgstr "Hier findest du deine permanent entfernten Pfadkarten."
+msgid "Track cards that are removed or moved permanently from the path deck here."
+msgstr ""
 
 msgid "Traits"
 msgstr "Merkmale"
@@ -1288,6 +1345,15 @@ msgstr "Reisen & Nachtlager aufschlagen"
 
 msgid "Traveled to {0}."
 msgstr "Gereist zu {0}."
+
+msgid "Type at least 2 characters to search..."
+msgstr ""
+
+msgid "Type at least 2 characters..."
+msgstr ""
+
+msgid "Type to search..."
+msgstr ""
 
 msgid "Types"
 msgstr "Typen"
@@ -1345,6 +1411,9 @@ msgstr "Wald"
 
 msgid "You"
 msgstr "Du"
+
+msgid "You are viewing this campaign in read-only mode."
+msgstr ""
 
 msgid "You can add this deck to a campaign to track rewards you have unlocked as a group."
 msgstr "Du kannst dieses Deck zu einer Kampagne hinzufügen und Belohnungen, die ihr als Gruppe freigeschaltet habt, verfolgen."
